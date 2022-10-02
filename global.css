@@ -1,0 +1,84 @@
+
+a {
+    text-decoration: none !important;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
+
+
+.heading_xs {
+    font-size: 0.8rem !important;
+}
+.heading-small {
+    font-size: 1.2rem !important;
+}
+
+.heading-medium {
+    font-size: 1.4rem !important;
+}
+
+.heading-big {
+    font-size: 2.6rem !important;
+}
+.heading-giant {
+    font-size: 3rem !important;
+}
+
+
+/*Colors*/
+
+.bg-dark-blue {
+    background: black !important;
+}
+
+.bg-light-blue {
+    background: #336ea2 !important;
+}
+
+.black {
+    color: black;
+}
+
+.gray {
+    color: lightgray;
+}
+
+.realgray {
+    color: gray;
+}
+
+
+.purple {
+    color: pink;
+    font-weight: 500;
+}
+
+/*container*/
+
+.container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    position: fixed !important;
+}
+
+
+
+.itemImg {
+    border-radius: 8px;
+    padding-top: 0.6rem;
+}
+
+.contactInfoText {
+    font-size: 0.9rem;
+    color: gray;
+    font-weight: 600;
+}
+
+.FallowIcons {
+    font-size: 1.4rem;
+    color: gray;
+}

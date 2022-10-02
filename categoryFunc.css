@@ -1,0 +1,871 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Cairo', sans-serif;
+}
+
+
+/* header style ------------------------------------------------------------------*/
+
+
+
+#header nav {
+    padding-top: 1rem;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(pink, #FFFFFF);
+}
+
+#header nav div {
+    display: flex;
+    align-items: center;
+}
+
+#logoText{
+  color: black;
+}
+#login a {
+    font-size: 1.4rem;
+    margin: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    transition-duration: 100ms;
+}
+
+#navbar{
+  padding: 1px;
+}
+
+#navbar:focus,
+#loginLink:hover {
+    background-color: pink;
+    color: white;
+}
+
+#bag {
+  font-size: 2rem;
+  transition: 200ms;
+}
+
+#shoppingBag{
+  padding-top: 0.4rem;
+}
+
+#bag:hover {
+  font-size: 2.4rem;
+}
+
+#header nav div ul {
+    padding-right: 2.4rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#logoAndName{
+  padding-left: 7rem;
+}
+
+#header nav div ul li {
+    margin: 1rem;
+
+
+}
+
+#header nav div ul li a {
+    color: gray;
+}
+
+#header h1 {
+
+    font-family: 'Lobster Two', sans-serif;
+
+}
+
+
+#searchBarText {
+    width: 250px;
+    
+}
+
+section nav div #searchBar {
+    align-content: center;
+}
+
+section nav div #searchBoxText {
+    width: 550px;
+    padding: 0.8rem 1rem;
+    margin: 8px 0;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 0px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    box-sizing: border-box;
+}
+
+#search_bar:focus,
+input:focus {
+    outline: none;
+}
+
+section nav div #searchBarButton {
+    color: white;
+    font-weight: 700;
+    background-color: gray;
+    width: 6rem;
+    padding: 0.8rem 26px;
+    margin: 8px 0;
+    display: inline-block;
+
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+
+    box-sizing: border-box;
+
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+#searchBarButton:hover {
+    background-color: pink;
+    border-top: 1px solid pink;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-left: 0px;
+    cursor: pointer;
+}
+
+/* Categories -------------------------------------------------------------------------------*/
+
+#Categories {
+    padding-top: 1rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #FFFFFF;
+
+}
+
+#Categories div {
+    display: flex;
+    align-items: center;
+    ;
+}
+
+
+#Categories div ul {
+
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#Categories div ul li {
+    margin-bottom: 2px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+
+}
+
+#Categories div ul li a {
+    color: gray;
+}
+
+.categoryName{
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.categoryName::after {
+  --scale: 0;
+  content:'';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #ed66eb , pink);
+  transform: scaleX(var(--scale));
+  transform-origin: var(--x) 50%;
+  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.categoryName:hover {
+  opacity: 1;
+}
+.categoryName:hover::after {
+  --scale: 1;
+}
+
+/*bigcard------------------------------------------------------------------------------*/
+
+#hero {
+    margin-top: 2rem;
+    height: 23rem;
+}
+#Carousel {
+    
+    background-image: url("111.png");
+    background-repeat: no-repeat;
+    background-size: 92rem;
+    margin-right: 13rem;
+    margin-left: 13rem;
+    height: 21rem;
+    background-position: 50px;
+   
+}
+
+#taxesText{
+    position: relative !important;
+    padding-top: 6rem;
+    
+    padding-left: 22rem;
+    padding-right: 1rem;
+    justify-content: center;
+    color: pink;  
+    text-decoration:double;
+    
+
+}
+
+#bigtext {
+    font-size: 2.8rem !important;
+}
+
+#smalltext {
+  position: relative;
+  padding-left: 48rem;
+}
+
+#clickForInfo {
+    color: gray;
+  
+}
+
+#clickForInfo:hover {
+    border-bottom:2px solid pink;
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 8px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  
+
+/*smallcard 1------------------------------------------------------------------------------*/
+
+#smallcardFlex {
+  margin-right: 13rem;
+  margin-left: 13rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+
+#smallCarousel {
+  
+  background-image: url("1133.jpg");
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  
+
+  width: 45rem;
+  height: 22rem;
+ 
+
+ 
+}
+
+#smalltaxesText{
+  position: relative !important;
+  padding-top: 6rem;
+  
+  padding-left: 4rem;
+  padding-right: 1rem;
+  justify-content: center;
+  color: pink;  
+  text-decoration:double;
+  
+
+}
+
+#smallbigtext {
+  font-size: 2rem !important;
+}
+
+#smallSmalltext {
+  position: absolute;
+
+  color: black;
+  font-size: 1.6rem;
+
+}
+
+#smallclickForInfo {
+  color: gray;
+
+}
+
+#card1Link {
+  position:absolute;
+  margin-top: 12rem;
+  margin-left: 0rem;;
+  padding: 0.2rem;
+  position: relative;
+  background-color: #FEFEFE;
+  border-radius: 10px;
+  
+}
+
+#smallClickForInfo:hover {
+  border-bottom:2px solid pink;
+  
+}
+
+.smallcard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.smallcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.smallcontainer {
+  padding: 2px 16px;
+}
+
+
+/*smallcard 2------------------------------------------------------------------------------*/
+
+
+#smallcard2 {
+  margin-top: 2rem;
+}
+#smallCarousel2 {
+  
+  background-image: url("snowflake-christmas-background-seamless-pattern-with-snowflake-icon_115464-1006.jpg");
+  background-repeat: no-repeat;
+  background-size: 60rem;
+  
+  margin-left: 2.2rem;
+  width: 45rem;
+  height: 22rem;
+
+ 
+}
+
+#smalltaxesText2{
+  position: absolute !important;
+  padding-top: 6rem;
+  
+  padding-left: 4rem;
+  padding-right: 1rem;
+  justify-content: center;
+  color: pink;  
+  text-decoration:double;
+  
+
+}
+
+#smallbigtext2 {
+  font-size: 2rem !important;
+}
+
+#smallSmalltext22 {
+  color: black;
+  font-size: 1.6rem;
+}
+
+#smallSmalltext2 {
+  color: black;
+  font-size: 1rem;
+}
+
+#smallclickForInfo2 {
+  color: lightcoral;
+
+}
+
+#smallClickForInfo2:hover {
+  border-bottom:2px solid pink;
+  
+}
+
+.smallcard2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.smallcard2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.smallcontainer2 {
+  padding: 2px 16px;
+}
+
+.cardLink {
+  color: black;
+  font-size: 1rem;
+}
+
+#card2Link {
+  position:absolute;
+ 
+ 
+  padding: 0.2rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  
+}
+
+  /*futures------------------------------------------------------------------------------*/
+
+  #futures {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    
+ 
+  }
+  #futuresFlex{
+    padding: 2rem;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .card_fut {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 8px;
+    width: 13rem;
+    height: 14rem;
+    display: block;
+  
+ 
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+  .card_fut:hover {
+    box-shadow: 0 12px 22px 0 rgba(0,0,0,0.2);
+  }
+  .container_fut {
+    padding: 10px 16px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+   
+
+  }
+
+  .container_fut h1 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #Customer {
+    padding-top: 1.7rem;
+  }
+
+  #moneyContainer {
+    padding-top: 0rem !important;
+  }
+
+  #futuresInfo {
+    text-align: center;
+  }
+
+  .futLink {
+    color: black;
+  }
+
+/*Item Part-------------------------------------------------------------------------------------------*/
+
+  #ItemsHeader {
+    text-align: center;
+    padding-top: 2rem;
+    display: block !important;
+  }
+
+  #ItemsPhar {
+    font-size: 1.2rem;
+  }
+
+ .sellerName {
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  .itemBox{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+  
+  #itemBox2{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+
+  #itemBox1{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+
+  #itemBox{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+
+  .card_item {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 8px;
+    width: 20rem;
+    height: 31.6rem;
+    display: block;
+    background-color: white;
+ 
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+  .card_item:hover {
+    box-shadow: 0 12px 22px 0 rgba(0,0,0,0.2);
+  }
+  .container_item {
+    padding: 10px 16px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .itemLink {
+    color: black;
+  }
+
+  #loadMoreDiv{
+    padding-top: 3.2rem;
+    text-align: center;
+  }
+   #loadMoreLink1 {
+    font-size: 1.2rem;
+    color:gray;
+   }
+
+   #loadMoreLink2 {
+    font-size: 1.2rem;
+    color:gray;
+   }
+   .loadMore {
+    font-size: 1.2rem;
+    color:gray;
+   }
+
+.fa-solid {
+  color: gray;
+}
+
+/*pagination--------------------------------------------------------------------------------------------*/
+#pagination{
+  margin: 3rem;
+  
+}
+#paginationBox{
+  display: flex;
+  justify-content: center;
+}
+.paginationBtnBox{
+  width: 8rem;
+  margin: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: gray;
+  text-align: center;
+  
+}
+.paginationBtn{
+  color: gray;
+  width: 13rem;
+
+}
+
+.paginationBtnBox:hover{
+  background-image: linear-gradient(pink, #FFFFFF);
+  cursor: pointer;
+}
+
+
+
+/*Weekly Best Items ------------------------------------------------------------------------------------*/
+
+  #weeklyBestItemsHeader {
+    text-align: center;
+  }
+
+  #weeklyBestItemsPharItemsPhar {
+    font-size: 1.2rem;
+  }
+
+ .sellerName {
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  #itemBox3{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+
+  #itemBox4{
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    display: flex;
+  }
+ 
+ /* rewievBanner------------------------------------------------------------------------------*/
+
+ #rewievBanner {
+  height: 16rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: url("3040791.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin-right: 13rem;
+  margin-left: 13rem;
+  
+ }
+
+ #rewievBannerTextBox{
+  position: relative !important;
+  justify-content: center;
+  color: gray;  
+  text-decoration:double;
+  text-align: center;
+  padding-top: 5rem;
+
+}
+
+#rewievBannerText {
+  font-size: 2.4rem;
+}
+
+#exploreMoreBtn {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-weight: 600;
+  color: gray;
+  transition: 400ms;
+}
+
+#exploreMoreBtn:hover {
+  color: #474747;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+/* emailSub------------------------------------------------------------------------------*/
+
+#emailSub {
+  height: 16rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: url("26669.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin-right: 13rem;
+  margin-left: 13rem;
+  text-align: center;
+  
+ }
+
+ #emailSubTextBox {
+  padding-top: 4rem;
+ }
+
+ #emailSubText {
+  font-size: 2.6rem;
+ }
+
+ #emailInputBox {
+  width: 550px;
+  padding: 0.8rem 1rem;
+  margin: 8px -5px;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 0px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  box-sizing: border-box;
+}
+ 
+#emailSendBtn {
+  color: white;
+  font-weight: 700;
+  background-color: gray;
+  width: 6rem;
+  padding: 0.8rem 0;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 0px;
+
+  box-sizing: border-box;
+  transition: 100ms;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px
+}
+
+#emailSendBtn:hover {
+  background: cornsilk;
+  cursor:pointer;
+  color: gray;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* footer ------------------------------------------------------------------------------*/
+
+#footer {
+  background-image: url(vecteezy_Background-Watercolor_pg0321.jpg);
+  background-size: cover;
+  height: 28rem;
+  box-shadow: 1px 1px;
+}
+
+#footerBox {
+  margin: 4rem;
+  display: flex;
+  padding-top: 4rem;
+  justify-content: center;
+}
+
+#AboutItems {
+  list-style-type: none;
+}
+
+#contactItems {
+  list-style-type: none;
+}
+
+#MyAccountItems {
+  list-style-type: none;
+}
+
+#FallowUsIcons {
+  list-style-type: none;
+  display: flex;
+}
+
+#FallowUsIcons li {
+ 
+  padding-right: 0.6rem;
+}
+
+#contactBox {
+  margin-right: 2rem;
+}
+
+#AboutBox {
+  margin-right: 2rem;
+}
+
+#MyAccountBox {
+  margin-right: 2rem;
+}
+
+#footers {
+  background-image: url(3040791.jpg);
+  background-size: cover;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+#listedItems {
+    display: flex;
+}
+
+#size_details summary::-webkit-details-marker {
+    display:none;
+    list-style: none;
+  }
